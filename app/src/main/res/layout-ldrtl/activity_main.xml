@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackgroundColor"
+    tools:context=".MainActivity">
+
+
+    <!-- text view to show the selected item-->
+
+
+    <!-- text view to show the selected item-->
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autoText="false"
+        android:text="@string/route"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/myButtonColor3"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interchangeT"
+        tools:ignore="Deprecated,TextViewEdits" />
+
+    <TextView
+        android:id="@+id/interchangeT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/interchange"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/myButtonColor3"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/directionText"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/direction"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/myButtonColor3"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center"
+        android:text="@string/price"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/myButtonColor3"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/priceText"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/count"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/myButtonColor3"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/time"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/myButtonColor3"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/testView1"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/textView"
+        android:drawableEnd="@drawable/ic_arrow_down"
+        android:gravity="center_vertical"
+        android:hint="@string/selectFromStation"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/myButtonColor3"
+        android:textColorHint="@color/myButtonColor3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nearestIcon"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/locationIcon"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        tools:ignore="MissingConstraints,RtlCompat,UseCompatTextViewDrawableXml" />
+
+
+    <TextView
+        android:id="@+id/testView2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/textView"
+        android:drawableEnd="@drawable/ic_arrow_down"
+        android:gravity="center_vertical"
+        android:hint="@string/selectToStation"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/myButtonColor3"
+        android:textColorHint="@color/myButtonColor3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/exchangeIcon"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/locationIcon2"
+        app:layout_constraintTop_toBottomOf="@+id/testView1"
+        tools:ignore="MissingConstraints,RtlCompat,UseCompatTextViewDrawableXml" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="61dp"
+
+        android:background="@drawable/button_background_color"
+        android:onClick="calc"
+
+        android:rotationX="0"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:singleLine="false"
+        android:text="@string/search"
+        android:textColor="@drawable/button_text_color"
+
+        android:textStyle="bold"
+        app:cornerRadius="45dp"
+        app:iconPadding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testView2"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/routeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/textView"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:scrollbars="vertical"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/clearButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background_color"
+        android:enabled="false"
+        android:onClick="clear"
+        android:text="@string/newTrip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/timeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background_color"
+        android:enabled="false"
+        android:onClick="timeLeft"
+        android:text="@string/timeLeft"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/countText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/textView"
+        android:gravity="center"
+        android:hint="@string/stations"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/textView"
+        android:gravity="center"
+        android:hint="@string/hm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/textView"
+        android:gravity="center"
+        android:hint="@string/egp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton" />
+
+    <TextView
+        android:id="@+id/directionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/textView"
+        android:gravity="center"
+        android:hint="@string/noDirection"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/interchangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/textView"
+        android:gravity="center"
+        android:hint="@string/noStation"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/interchangeT"
+        app:layout_constraintTop_toBottomOf="@+id/direction2T" />
+
+    <TextView
+        android:id="@+id/direction2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/textView"
+        android:gravity="center"
+        android:hint="@string/noDirec"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <TextView
+        android:id="@+id/direction2T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center"
+        android:text="@string/thenDirection"
+        android:textAlignment="viewStart"
+        android:textColor="@color/myButtonColor3"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/direction2Text"
+        app:layout_constraintTop_toBottomOf="@+id/timeText"
+        tools:ignore="RtlCompat" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:scaleX="-1"
+        android:tint="@color/myButtonColor3"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:srcCompat="@drawable/ic_down_arrow_download"
+        tools:ignore="UseAppTint" />
+
+    <ImageView
+        android:id="@+id/locationIcon"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:onClick="location"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:srcCompat="@drawable/ic_map_svgrepo_com"
+        tools:ignore="UseAppTint,UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/locationIcon2"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="location2"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationIcon"
+        app:srcCompat="@drawable/ic_map_svgrepo_com"
+        tools:ignore="UseAppTint,UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/exchangeIcon"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="exchange"
+        android:tint="@color/myButtonColor4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nearestIcon"
+        app:srcCompat="@drawable/ic_exchange_svgrepo"
+        tools:ignore="UseAppTint" />
+
+    <ImageView
+        android:id="@+id/nearestIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="nearestStation"
+        android:tint="@color/myButtonColor4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nearbyText"
+        app:srcCompat="@drawable/ic_nearby"
+        tools:ignore="UseAppTint,UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/nearbyText"
+        android:layout_width="45dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/nearby"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/myButtonColor4"
+        android:textSize="7sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        tools:ignore="SmallSp" />
+
+    <ImageView
+        android:id="@+id/anotherRouteBtn"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="false"
+        android:onClick="anotherRoute"
+        android:tint="@color/textview_colors"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/routeView"
+        app:srcCompat="@drawable/ic_next_svgrepo_com"
+        tools:ignore="UseAppTint,UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/shortestBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:gravity="center"
+        android:onClick="shortest"
+        android:text="@string/shortestRoute"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textview_colors"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/routeView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/anotherT"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/anotherRoute"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textview_colors"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/anotherRouteBtn"
+        tools:ignore="SmallSp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

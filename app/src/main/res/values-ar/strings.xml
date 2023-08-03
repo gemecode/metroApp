@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مترو القاهرة</string>
+    <string name="start_a_trip">ابدأ رحلة</string>
+    <string name="metro_map">خريطة المترو</string>
+    <string name="language">اللغة</string>
+    <string name="chooseLanguage">إختر لغة</string>
+    <string name="Cancel">إلغاء</string>
+    <string name="Alert">تنبيه !</string>
+    <string name="Yes">نعم</string>
+    <string name="No">لا</string>
+    <string name="Do_you_want_to_exit">هل تريد الخروج ؟</string>
+    <string name="time">الوقت :</string>
+    <string name="count">عدد :</string>
+    <string name="price">السعر :</string>
+    <string name="hm">00س : 00د</string>
+    <string name="egp">0 ج.م</string>
+    <string name="stations">0 محطات</string>
+    <string name="direction">الإتجاه :</string>
+    <string name="noDirection">لا يوجد</string>
+    <string name="interchange">تبادلية :</string>
+    <string name="noStation">لا محطه</string>
+    <string name="thenDirection">ثم اتجاه :</string>
+    <string name="noDirec">لا يوجد</string>
+    <string name="shortestRoute">أقصر مسار</string>
+    <string name="route">المسار</string>
+    <string name="selectFromStation">إختر من محطة</string>
+    <string name="selectToStation">إختر إلى محطة</string>
+    <string name="nearby">أقرب محطة</string>
+    <string name="anotherRoute">مسار آخر</string>
+    <string name="search">بحث</string>
+    <string name="newTrip">رحلة جديدة</string>
+    <string name="timeLeft">الوقت المتبقي</string>
+    <string name="pleaseSelectYourStations">الرجاء تحديد محطاتك</string>
+    <string name="pleaseSelectFromStation">الرجاء تحديد من محطة</string>
+    <string name="pleaseSelectToStation">الرجاء تحديد إلى محطة</string>
+    <string name="errorFetchingLocation">خطأ في جلب الموقع</string>
+    <string name="pleaseSelectYourStationss">الرجاء تحديد محطاتك</string>
+    <string name="youAreInTheSameStation">انت في نفس المحطة</string>
+    <string name="select_station">إختر محطة</string>
+    <string name="searchStation">إبحث عن محطتك</string>
+    <string name="metroLines">خطوط المترو</string>
+    <string name="tripLog">سجل الرحلات</string>
+    <string name="nearestStationToMe">أقرب محطة</string>
+    <string name="contactUs">إتصل بنا</string>
+</resources>
